@@ -1,0 +1,3 @@
+make[3]: Nothing to be done for `bdw_work/wrappers/SobelFilter_wrap.h'.
+/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/bin/bdw_shell /usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/share/stratus/tcl/bdw_siminfo.tcl project.tcl B
+make[4]: Nothing to be done for `bdw_work/wrappers/SobelFilter_wrap.h'.

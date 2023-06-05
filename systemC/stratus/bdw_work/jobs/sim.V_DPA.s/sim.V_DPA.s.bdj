@@ -1,0 +1,12 @@
+24411		// ppid
+24415		// pid
+ws26	// host name
+bdw_work/trace/sim.V_DPA.s.trace		// log file
+2		// state ( 0=unrun 1=running 2=success 3=failed 4=unknown 5=queued
+0		// exit status
+0		// quiet
+0		// background
+1685455734	// start time: Tue May 30 22:08:54 2023
+1685455747	// end time:   Tue May 30 22:09:07 2023
+/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/bin/hub_ncverilog -f bdw_work/sims/V_DPA/siminfo +libext+.v +define+ioConfig +define+BDW_RTL_SobelFilter_DPA +nowarn+LIBNOU +hubSetOption+libdef=bdw_work/sims/V_DPA/sim_V_DPA.so,argv=../data.txt%OUT.txt +hubSetOption+bdr=bdw_work/sims/V_DPA/sim.bdr -l bdw_work/sims/V_DPA/bdw_sim_verilog.log
+

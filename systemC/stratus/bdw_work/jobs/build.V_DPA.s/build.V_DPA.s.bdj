@@ -1,0 +1,12 @@
+20051		// ppid
+20054		// pid
+ws26	// host name
+bdw_work/trace/build.V_DPA.s.trace		// log file
+2		// state ( 0=unrun 1=running 2=success 3=failed 4=unknown 5=queued
+0		// exit status
+0		// quiet
+0		// background
+1685455673	// start time: Tue May 30 22:07:53 2023
+1685455732	// end time:   Tue May 30 22:08:52 2023
+make --no-print-directory -f Makefile CWBExec_build=1 build_V_DPA_sub
+

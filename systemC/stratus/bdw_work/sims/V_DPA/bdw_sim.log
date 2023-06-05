@@ -1,0 +1,99 @@
+TOOL:	xrun(64)	22.03-s003: Started on May 30, 2023 at 22:08:54 CST
+xrun(64): 22.03-s003: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+file: bdw_work/sims/top_V_DPA.v
+			$value$plusargs("BDW_VLOG_DUMPFILE+%s",dump_file);
+			              |
+xmvlog: *W,NOSYST (bdw_work/sims/top_V_DPA.v,41|17): System function '$value$plusargs' invoked as a task. Return value will be ignored.
+	module worklib.top:v
+		errors: 0, warnings: 1
+file: bdw_work/wrappers/SobelFilter_cosim.v
+	module worklib.SobelFilter_cosim:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/SobelFilter/DPA/SobelFilter_rtl.v
+	module worklib.SobelFilter:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/SobelFilter/DPA/v_rtl/SobelFilter_RAM_28X32_1.v
+	module worklib.SobelFilter_RAM_28X32_1:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/SobelFilter/DPA/v_rtl/SobelFilter_ROM_28X32_filter_coeffs.v
+	module worklib.SobelFilter_ROM_28X32_filter_coeffs:v
+		errors: 0, warnings: 0
+xmvlog: *W,SPDUSD: Include directory bdw_work/wrappers given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+*** Registering Hub PLI1.0 Interface***
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		top
+	Building instance overlay tables: ....................
+      $readmemh("bdw_work/modules/SobelFilter/DPA/SobelFilter_ROM_28X32_filter_coeffs_1.memh", filter_coeffs);
+                                                                                                           |
+xmelab: *W,MEMODR (./bdw_work/modules/SobelFilter/DPA/v_rtl/SobelFilter_ROM_28X32_filter_coeffs.v,18|107): $readmem default memory order incompatible with IEEE1364.
+ Done
+	Generating native compiled code:
+		worklib.SobelFilter_ROM_28X32_filter_coeffs:v <0x5338a63c>
+			streams:   3, words:   767
+		worklib.SobelFilter_RAM_28X32_1:v <0x41afc48c>
+			streams:   2, words:   797
+		worklib.top:v <0x64f771d8>
+			streams: 114, words: 104053
+		worklib.SobelFilter:v <0x241ea119>
+			streams:  48, words: 20103
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 5       5
+		Registers:             152     152
+		Scalar wires:           17       -
+		Vectored wires:         14       -
+		Always blocks:          34      34
+		Initial blocks:          8       8
+		Cont. assignments:      12      18
+		Pseudo assignments:     10      10
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.top:v
+Loading snapshot worklib.top:v .................... Done
+*** Registering Hub PLI1.0 Interface***
+xcelium> source /usr/cadtool/cadence/XCELIUM/XCELIUM_22.03.003/tools/xcelium/files/xmsimrc
+xcelium> 
+xcelium> run
+
+        SystemC 2.3.3-Accellera --- Jun 11 2021 12:51:14
+        Copyright (c) 1996-2018 by all Contributors,
+        ALL RIGHTS RESERVED
+1
+
+
+
+
+
+
+NOTE: Cadence Design Systems Hub Simulation Platform : version 21.20-p100
+Testbench sink thread read 65536 values. Average latency 88.
+
+Info: /OSCI/SystemC: Simulation stopped by user.
+Simulation stopped via $stop(1) at time 6800345100 PS + 0
+./bdw_work/sims/top_V_DPA.v:67 		#100 $stop;
+xcelium> quit
+open txt
+
+
+
+
+
+
+
+
+
+
+
+n\n
+
+n
+
+\nTotal run time = 6800280 ns
+Throught = 0.0117642 outputs/clock
+Average latency = 16085 clocks/output
+TOOL:	xrun(64)	22.03-s003: Exiting on May 30, 2023 at 22:09:07 CST  (total: 00:00:13)

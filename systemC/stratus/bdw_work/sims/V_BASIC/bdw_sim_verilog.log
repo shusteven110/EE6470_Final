@@ -1,0 +1,78 @@
+xrun(64): 22.03-s003: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	22.03-s003: Started on May 30, 2023 at 22:52:31 CST
+xrun
+	-sdfdir bdw_work/sims/V_BASIC
+	+xm64bit
+	+incdir+/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib
+	+incdir+bdw_work/wrappers
+	+access+rw
+	+loadpli1=/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/ncvlog_ssl:ssl_bootstrap
+	+xminput+bdw_work/sims/V_BASIC/ncverilog.do
+	+xmlibdirname+bdw_work/sims/V_BASIC
+	+BDW_VLOG_DUMPFILE+
+	-f bdw_work/sims/V_BASIC/siminfo
+		bdw_work/sims/top_V_BASIC.v
+		bdw_work/wrappers/SobelFilter_cosim.v
+		bdw_work/modules/SobelFilter/BASIC/SobelFilter_rtl.v
+		bdw_work/modules/SobelFilter/BASIC/v_rtl/SobelFilter_RAM_28X32_1.v
+		bdw_work/modules/SobelFilter/BASIC/v_rtl/SobelFilter_ROM_28X32_filter_coeffs.v
+	+libext+.v
+	+define+ioConfig
+	+define+BDW_RTL_SobelFilter_BASIC
+	+nowarn+LIBNOU
+	+hubSetOption+libdef=bdw_work/sims/V_BASIC/sim_V_BASIC.so,argv=../data.txt%OUT.txt
+	+hubSetOption+bdr=bdw_work/sims/V_BASIC/sim.bdr
+	-l bdw_work/sims/V_BASIC/bdw_sim_verilog.log
+
+   User defined plus("+") options:
+	+BDW_VLOG_DUMPFILE+
+	+hubSetOption+libdef=bdw_work/sims/V_BASIC/sim_V_BASIC.so,argv=../data.txt%OUT.txt
+	+hubSetOption+bdr=bdw_work/sims/V_BASIC/sim.bdr
+
+Recompiling... reason: unable to stat '/./home/m110/m110061606/ee6470/stratus/hw3/stratus/bdw_work/sims/top_V_BASIC.v'.
+file: bdw_work/sims/top_V_BASIC.v
+			$value$plusargs("BDW_VLOG_DUMPFILE+%s",dump_file);
+			              |
+xmvlog: *W,NOSYST (bdw_work/sims/top_V_BASIC.v,41|17): System function '$value$plusargs' invoked as a task. Return value will be ignored.
+file: bdw_work/modules/SobelFilter/BASIC/SobelFilter_rtl.v
+	module worklib.SobelFilter:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/SobelFilter/BASIC/v_rtl/SobelFilter_ROM_28X32_filter_coeffs.v
+xmvlog: *W,SPDUSD: Include directory bdw_work/wrappers given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+*** Registering Hub PLI1.0 Interface***
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		top
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.top:v <0x2804c328>
+			streams: 114, words: 104053
+		worklib.SobelFilter:v <0x6e358b85>
+			streams:  45, words: 20312
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 5       5
+		Registers:             153     153
+		Scalar wires:           17       -
+		Vectored wires:         12       -
+		Always blocks:          35      35
+		Initial blocks:          8       8
+		Cont. assignments:      10      16
+		Pseudo assignments:     10      10
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.top:v
+Loading snapshot worklib.top:v .................... Done
+*** Registering Hub PLI1.0 Interface***
+xcelium> source /usr/cadtool/cadence/XCELIUM/XCELIUM_22.03.003/tools/xcelium/files/xmsimrc
+xcelium> 
+xcelium> run
+NOTE: Cadence Design Systems Hub Simulation Platform : version 21.20-p100
+Simulation stopped via $stop(1) at time 6800345100 PS + 0
+/home/m110/m110061606/ee6470/stratus/hw3/stratus/bdw_work/sims/top_V_BASIC.v:67 
+xcelium> quit
+TOOL:	xrun(64)	22.03-s003: Exiting on May 30, 2023 at 22:52:43 CST  (total: 00:00:12)

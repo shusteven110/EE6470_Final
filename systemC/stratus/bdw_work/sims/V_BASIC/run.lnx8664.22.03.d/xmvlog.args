@@ -1,0 +1,37 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-XLMODE
+bdw_work/sims/V_BASIC/run.lnx8664.22.03.d
+-RUNMODE
+-amsdlibdir
+bdw_work/sims/V_BASIC/AMSD
+-INCDIR
+/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib
+-INCDIR
+bdw_work/wrappers
+-XMLIBDIRNAME
+bdw_work/sims/V_BASIC
+bdw_work/sims/top_V_BASIC.v
+bdw_work/wrappers/SobelFilter_cosim.v
+bdw_work/modules/SobelFilter/BASIC/SobelFilter_rtl.v
+bdw_work/modules/SobelFilter/BASIC/v_rtl/SobelFilter_RAM_28X32_1.v
+bdw_work/modules/SobelFilter/BASIC/v_rtl/SobelFilter_ROM_28X32_filter_coeffs.v
+-LIBEXT
+.v
+-DEFINE
+ioConfig
+-DEFINE
+BDW_RTL_SobelFilter_BASIC
+-NOWARN
+LIBNOU
+-CDSLIB
+bdw_work/sims/V_BASIC/run.lnx8664.22.03.d/cdsrun.lib
+-HDLVAR
+bdw_work/sims/V_BASIC/run.lnx8664.22.03.d/hdlrun.var
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+bdw_work/sims/V_BASIC/run.lnx8664.22.03.d/xllibs
+-ALLOWUNBOUND

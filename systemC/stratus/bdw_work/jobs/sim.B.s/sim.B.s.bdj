@@ -1,0 +1,12 @@
+22045		// ppid
+22048		// pid
+ws26	// host name
+bdw_work/trace/sim.B.s.trace		// log file
+2		// state ( 0=unrun 1=running 2=success 3=failed 4=unknown 5=queued
+0		// exit status
+0		// quiet
+0		// background
+1685458109	// start time: Tue May 30 22:48:29 2023
+1685458109	// end time:   Tue May 30 22:48:29 2023
+bdw_work/sims/B/sim_B ../data.txt OUT.txt
+

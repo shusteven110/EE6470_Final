@@ -1,0 +1,9 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+/home/m110/m110061613/EE6470/final3/stratus/bdw_work/sims/top_V_BASIC.v
+/home/m110/m110061613/EE6470/final3/stratus/bdw_work/wrappers/SobelFilter_cosim.v
+/home/m110/m110061613/EE6470/final3/stratus/bdw_work/modules/SobelFilter/BASIC/SobelFilter_rtl.v
+/home/m110/m110061613/EE6470/final3/stratus/bdw_work/modules/SobelFilter/BASIC/v_rtl/SobelFilter_RAM_28X32_1.v
+/home/m110/m110061613/EE6470/final3/stratus/bdw_work/modules/SobelFilter/BASIC/v_rtl/SobelFilter_ROM_28X32_filter_coeffs.v

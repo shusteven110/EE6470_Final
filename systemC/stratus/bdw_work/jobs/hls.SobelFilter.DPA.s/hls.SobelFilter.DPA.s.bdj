@@ -1,0 +1,12 @@
+20852		// ppid
+20855		// pid
+ws26	// host name
+bdw_work/trace/hls.SobelFilter.DPA.s.trace		// log file
+2		// state ( 0=unrun 1=running 2=success 3=failed 4=unknown 5=queued
+0		// exit status
+0		// quiet
+0		// background
+1685455675	// start time: Tue May 30 22:07:55 2023
+1685455723	// end time:   Tue May 30 22:08:43 2023
+make --no-print-directory -f Makefile -j1 CWBExec_hlsc=1 bdw_work/modules/SobelFilter/DPA/SobelFilter_rtl.cpp bdw_work/modules/SobelFilter/DPA/SobelFilter_rtl.v bdw_work/modules/SobelFilter/DPA/stratus_hls.bdr
+

@@ -1,0 +1,10 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-SDFDIR
+bdw_work/sims/V_BASIC
+-ACCESS
++rw
+-LOADPLI1
+/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/ncvlog_ssl:ssl_bootstrap

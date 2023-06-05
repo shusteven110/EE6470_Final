@@ -1,0 +1,12 @@
+16783		// ppid
+16787		// pid
+ws26	// host name
+bdw_work/trace/sim.V_FLAT_UNROLL_ALL_FAST.s.trace		// log file
+2		// state ( 0=unrun 1=running 2=success 3=failed 4=unknown 5=queued
+0		// exit status
+0		// quiet
+0		// background
+1685455525	// start time: Tue May 30 22:05:25 2023
+1685455527	// end time:   Tue May 30 22:05:27 2023
+/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/bin/hub_ncverilog -f bdw_work/sims/V_FLAT_UNROLL_ALL_FAST/siminfo +libext+.v +define+ioConfig +define+BDW_RTL_SobelFilter_FLAT_UNROLL_ALL_FAST +nowarn+LIBNOU +hubSetOption+libdef=bdw_work/sims/V_FLAT_UNROLL_ALL_FAST/sim_V_FLAT_UNROLL_ALL_FAST.so,argv=../data.txt%OUT.txt +hubSetOption+bdr=bdw_work/sims/V_FLAT_UNROLL_ALL_FAST/sim.bdr -l bdw_work/sims/V_FLAT_UNROLL_ALL_FAST/bdw_sim_verilog.log
+

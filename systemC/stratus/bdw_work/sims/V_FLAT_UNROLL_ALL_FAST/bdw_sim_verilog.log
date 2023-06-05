@@ -1,0 +1,70 @@
+xrun(64): 22.03-s003: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	22.03-s003: Started on May 30, 2023 at 22:05:25 CST
+xrun
+	-sdfdir bdw_work/sims/V_FLAT_UNROLL_ALL_FAST
+	+xm64bit
+	+incdir+/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib
+	+incdir+bdw_work/wrappers
+	+access+rw
+	+loadpli1=/usr/cadtool/cadence/STRATUS/STRATUS_21.10.100/tools.lnx86/stratus/lib/64bit/ncvlog_ssl:ssl_bootstrap
+	+xminput+bdw_work/sims/V_FLAT_UNROLL_ALL_FAST/ncverilog.do
+	+xmlibdirname+bdw_work/sims/V_FLAT_UNROLL_ALL_FAST
+	+BDW_VLOG_DUMPFILE+
+	-f bdw_work/sims/V_FLAT_UNROLL_ALL_FAST/siminfo
+		bdw_work/sims/top_V_FLAT_UNROLL_ALL_FAST.v
+		bdw_work/wrappers/SobelFilter_cosim.v
+		bdw_work/modules/SobelFilter/FLAT_UNROLL_ALL_FAST/SobelFilter_rtl.v
+	+libext+.v
+	+define+ioConfig
+	+define+BDW_RTL_SobelFilter_FLAT_UNROLL_ALL_FAST
+	+nowarn+LIBNOU
+	+hubSetOption+libdef=bdw_work/sims/V_FLAT_UNROLL_ALL_FAST/sim_V_FLAT_UNROLL_ALL_FAST.so,argv=../data.txt%OUT.txt
+	+hubSetOption+bdr=bdw_work/sims/V_FLAT_UNROLL_ALL_FAST/sim.bdr
+	-l bdw_work/sims/V_FLAT_UNROLL_ALL_FAST/bdw_sim_verilog.log
+
+   User defined plus("+") options:
+	+BDW_VLOG_DUMPFILE+
+	+hubSetOption+libdef=bdw_work/sims/V_FLAT_UNROLL_ALL_FAST/sim_V_FLAT_UNROLL_ALL_FAST.so,argv=../data.txt%OUT.txt
+	+hubSetOption+bdr=bdw_work/sims/V_FLAT_UNROLL_ALL_FAST/sim.bdr
+
+Recompiling... reason: file './bdw_work/modules/SobelFilter/FLAT_UNROLL_ALL_FAST/SobelFilter_rtl.v' is newer than expected.
+	expected: Tue May 30 21:55:10 2023
+	actual:   Tue May 30 22:05:14 2023
+file: bdw_work/sims/top_V_FLAT_UNROLL_ALL_FAST.v
+			$value$plusargs("BDW_VLOG_DUMPFILE+%s",dump_file);
+			              |
+xmvlog: *W,NOSYST (bdw_work/sims/top_V_FLAT_UNROLL_ALL_FAST.v,41|17): System function '$value$plusargs' invoked as a task. Return value will be ignored.
+file: bdw_work/modules/SobelFilter/FLAT_UNROLL_ALL_FAST/SobelFilter_rtl.v
+xmvlog: *W,SPDUSD: Include directory bdw_work/wrappers given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+*** Registering Hub PLI1.0 Interface***
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		top
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 3       3
+		Registers:             187     187
+		Scalar wires:           13       -
+		Vectored wires:         28       -
+		Always blocks:          71      71
+		Initial blocks:          7       7
+		Cont. assignments:      31      35
+		Pseudo assignments:      5       5
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.top:v
+Loading snapshot worklib.top:v .................... Done
+*** Registering Hub PLI1.0 Interface***
+xcelium> source /usr/cadtool/cadence/XCELIUM/XCELIUM_22.03.003/tools/xcelium/files/xmsimrc
+xcelium> 
+xcelium> run
+NOTE: Cadence Design Systems Hub Simulation Platform : version 21.20-p100
+Simulation stopped via $stop(1) at time 240065100 PS + 0
+./bdw_work/sims/top_V_FLAT_UNROLL_ALL_FAST.v:67 		#100 $stop;
+xcelium> quit
+TOOL:	xrun(64)	22.03-s003: Exiting on May 30, 2023 at 22:05:27 CST  (total: 00:00:02)

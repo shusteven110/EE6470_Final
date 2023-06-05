@@ -1,0 +1,6 @@
+bdw_work/sims/top_V_DPA.v
+bdw_work/wrappers/SobelFilter_cosim.v
+bdw_work/modules/SobelFilter/DPA/SobelFilter_rtl.v
+bdw_work/modules/SobelFilter/DPA/v_rtl/SobelFilter_RAM_28X32_1.v
+bdw_work/modules/SobelFilter/DPA/v_rtl/SobelFilter_ROM_28X32_filter_coeffs.v
+
